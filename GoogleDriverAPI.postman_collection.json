@@ -1,0 +1,176 @@
+{
+	"id": "f62f0cd6-967c-8086-1ecb-cbe78386e246",
+	"owner": "3948488",
+	"name": "GoogleDriverAPI",
+	"description": null,
+	"order": [
+		"a81b2360-c842-f82c-2465-525c075cf31d",
+		"82a546a4-26a2-0645-bb8c-4b62c4259191",
+		"05e2778c-b671-f523-f155-535a097a303c",
+		"30ec176a-a88d-559d-f416-92b7742d6238",
+		"aea7248e-fe78-484f-a0f7-4b591e75ddf9"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1522631831137,
+	"public": false,
+	"lastUpdatedBy": "3948488",
+	"lastRevision": 3557208520,
+	"team": null,
+	"variables": null,
+	"auth": null,
+	"events": null,
+	"requests": [
+		{
+			"id": "05e2778c-b671-f523-f155-535a097a303c",
+			"headers": "Authorization: {{authorization}}\nContent-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "{{authorization}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://www.googleapis.com/drive/v2/files/{{fileId}}/copy",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1522906897489,
+			"name": "copy files",
+			"description": "Gets a file's metadata by ID.",
+			"collectionId": "f62f0cd6-967c-8086-1ecb-cbe78386e246",
+			"responses": []
+		},
+		{
+			"id": "30ec176a-a88d-559d-f416-92b7742d6238",
+			"headers": "Authorization: {{authorization}}\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "{{authorization}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://www.googleapis.com/drive/v2/files/{{fileId}}",
+			"folder": null,
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PATCH",
+			"data": [],
+			"dataMode": "binary",
+			"tests": "\npm.test(\"Status code is 200\", function () {\n    pm.response.to.have.status(200);\n});",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1522907070426,
+			"name": "patch files",
+			"description": "Updates file metadata",
+			"collectionId": "f62f0cd6-967c-8086-1ecb-cbe78386e246",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "82a546a4-26a2-0645-bb8c-4b62c4259191",
+			"headers": "Authorization: {{authorization}}\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "{{authorization}}",
+					"description": "Upload the media only, without any metadata",
+					"enabled": true
+				}
+			],
+			"url": "https://www.googleapis.com/drive/v2/files",
+			"folder": null,
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "params",
+			"tests": "\ntests[\"Status code is 200\"] = responseCode.code === 200;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1522903906705,
+			"name": "insert files",
+			"description": "Insert a new file",
+			"collectionId": "f62f0cd6-967c-8086-1ecb-cbe78386e246",
+			"responses": []
+		},
+		{
+			"id": "a81b2360-c842-f82c-2465-525c075cf31d",
+			"headers": "Authorization: {{authorization}}\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "{{authorization}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://www.googleapis.com/drive/v2/files/",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\nvar jsonData = JSON.parse(responseBody);\npostman.setEnvironmentVariable(\"fileId\",jsonData.items[0].id);\npostman.setGlobalVariable(\"fileId\", jsonData.items[0].id);\nconsole.log();\n\n\n\npostman.setEnvironmentVariable(\"variable_key\", \"variable_value\");",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1522907083028,
+			"name": "get files",
+			"description": "Gets a file's metadata by ID.",
+			"collectionId": "f62f0cd6-967c-8086-1ecb-cbe78386e246",
+			"responses": []
+		},
+		{
+			"id": "aea7248e-fe78-484f-a0f7-4b591e75ddf9",
+			"headers": "Authorization: {{authorization}}\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "{{authorization}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://www.googleapis.com/drive/v2/files/trash",
+			"folder": null,
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": null,
+			"dataMode": "params",
+			"tests": "\n\ntests[\"Status code is 200\"] = responseCode.code === 204;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1522903899503,
+			"name": "emptyTrash",
+			"description": "Permanently deletes all of the user's trashed files",
+			"collectionId": "f62f0cd6-967c-8086-1ecb-cbe78386e246"
+		}
+	]
+}
