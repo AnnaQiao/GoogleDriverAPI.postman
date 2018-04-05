@@ -11,17 +11,11 @@
 ![](https://github.com/AnnaQiao/GoogleDriverAPI.postman/blob/master/pictures/download%20postman%20app.png)
 ## how to create a test suit and test cases
 ### Creating a collection(test suit) and request(test case)
-    Open Postman App and click "NEW" buttom to open .
-   ![](https://github.com/AnnaQiao/GoogleDriverAPI.postman/blob/master/pictures/launch%20screen.PNG)
-    1. creating a new collection in "Create New" screen
-     - Clich "Collection" button and open "Create a new collection" screen 
-     
-     - Enter a name and description for your collection.
-     - Click the Create button.
-  ![](https://github.com/AnnaQiao/GoogleDriverAPI.postman/blob/master/pictures/collection.PNG)
-     2. creating a new collection in "Create New" screen
-       - Enter a title and description for your request.
-       - Select a collection and save the request in it.
-       - Click the Save button.
-  ![](https://github.com/AnnaQiao/GoogleDriverAPI.postman/blob/master/pictures/creating%20request.PNG)
+  You can create and save new collections and requests from the :
+   - Workspaces build view
+   - New button
+   - Launch screen
+   ![](https://github.com/AnnaQiao/GoogleDriverAPI.postman/blob/master/pictures/collection.PNG)
+   ![](https://github.com/AnnaQiao/GoogleDriverAPI.postman/blob/master/pictures/creating%20request.PNG)
+   #######reference:https://www.getpostman.com/docs/v6/
   
