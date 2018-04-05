@@ -8,3 +8,4 @@
 ## Install Postman APP
 #### Postman is available as a native APP for Mac, Windows, and Linux operating system.
 -  go to the apps pages https://www.getpostman.com/apps, and download for MAC/WINDOWS/LINUX depending on your platform.
+![]()
