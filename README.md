@@ -15,7 +15,7 @@
    - Workspaces build view
    - New button
    - Launch screen
-   ![](https://github.com/AnnaQiao/GoogleDriverAPI.postman/blob/master/pictures/collection.PNG)
-   ![](https://github.com/AnnaQiao/GoogleDriverAPI.postman/blob/master/pictures/creating%20request.PNG)
+   
+   ![](https://github.com/AnnaQiao/GoogleDriverAPI.postman/blob/master/pictures/launch%20screen.PNG)
    #######reference:https://www.getpostman.com/docs/v6/
   
