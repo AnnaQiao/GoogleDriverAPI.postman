@@ -48,6 +48,6 @@
   #### STEP6 Open PostMan, input the "Authorization" key in the headers, and input "Bearer ACCESS_CODE"(the ACCESS_CODE is copied from last step)
  ![](https://github.com/AnnaQiao/GoogleDriverAPI.postman/blob/master/pictures/autorization-4.PNG)
  ### run this test suite 
-  ![](https://github.com/AnnaQiao/GoogleDriverAPI.postman/blob/master/pictures/autorization-4.PNG)
+  ![](https://github.com/AnnaQiao/GoogleDriverAPI.postman/blob/master/pictures/runtestsuite.JPG)
  ### testing report
-   ![](https://github.com/AnnaQiao/GoogleDriverAPI.postman/blob/master/pictures/autorization-4.PNG)
+   ![](https://github.com/AnnaQiao/GoogleDriverAPI.postman/blob/master/pictures/collection%20Runner.PNG)
