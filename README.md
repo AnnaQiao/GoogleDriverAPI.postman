@@ -5,12 +5,13 @@
 ### prerequisites
 - Git Source Code Manangement
 - Postman tool - for API testing
+- Google driver APIs reference (https://developers.google.com/drive/v2/reference/)
 ### Install Postman APP
 #### Postman is available as a native APP for Mac, Windows, and Linux operating system.
 - go to the apps pages https://www.getpostman.com/apps, and download for MAC/WINDOWS/LINUX depending on your platform.
 ![](https://github.com/AnnaQiao/GoogleDriverAPI.postman/blob/master/pictures/download%20postman%20app.png)
 ### how to create a test suit and test cases
-### Creating a collection(test suit) and request(test case)
+#### Creating a collection(test suit) and request(test case)
   1. create and save new collections and requests from the :
    - Workspaces build view
    - New button
