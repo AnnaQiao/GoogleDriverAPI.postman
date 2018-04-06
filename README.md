@@ -37,6 +37,14 @@
        4. Click "Send" to excute this case, them click "Eye", You will see the fileId recorded.
      ![](https://github.com/AnnaQiao/GoogleDriverAPI.postman/blob/master/pictures/GetID.PNG)
  ### How to get autoriztion value of Google Driver API
- 
- ### How Run collection 
-   
+ ##### STEP1 Go to https://developers.google.com/oauthplayground/ 
+ ##### STEP1  Select & authorize APIs, eg： "https://www.googleapis.com/auth/drive" to "input  your own scope" 
+ ![](https://github.com/AnnaQiao/GoogleDriverAPI.postman/blob/master/pictures/authorization-1.PNG)
+##### STEP2 Click "Authorize API" button and choose google account and allow the access
+##### STEP3 Click the "Exchange authorization code for tokens" button
+ ![](https://github.com/AnnaQiao/GoogleDriverAPI.postman/blob/master/pictures/authorization-2.PNG)
+##### STEP4 Copy the ACCESS_CODE like from the right pane
+ ![](https://github.com/AnnaQiao/GoogleDriverAPI.postman/blob/master/pictures/autorization-3.PNG)
+##### STEP5 Open PostMan, input the "Authorization" key in the headers, and input "Bearer ACCESS_CODE"(the ACCESS_CODE is copied from last step)
+ ![](https://github.com/AnnaQiao/GoogleDriverAPI.postman/blob/master/pictures/autorization-4.PNG)
+ ### run the test suit 
